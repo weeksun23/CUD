@@ -10,42 +10,42 @@ cud.js
 ```javascript
 var curd = new CUD("funcWin",{
     //各种字段信息
-		protFuncId : {type : 'hidden'},
-		abbre : {
-			type : "validatebox",text : "简称"
-		},
-		name : {
-			type : "validatebox",text : "名称"
-		},
-		type : {
-			type : "combobox",text : "类型",options : {
-				data : [{
-					value : "pack",text : "预处理"
-				},{
-					value : "data",text : "数据项"
-				},{
-					value : "time",text : "时间"
-				}]
-			}
-		},
-		paraDesc : {
-			type : "textarea",text : "参数说明",colspan : 2
-		},
-		funcDesc : {
-			type : "textarea",text : "函数说明",colspan : 2
-		},
-		notes : {
-			type : "textarea",text : "备注",colspan : 2
+	protFuncId : {type : 'hidden'},
+	abbre : {
+		type : "validatebox",text : "简称"
+	},
+	name : {
+		type : "validatebox",text : "名称"
+	},
+	type : {
+		type : "combobox",text : "类型",options : {
+			data : [{
+				value : "pack",text : "预处理"
+			},{
+				value : "data",text : "数据项"
+			},{
+				value : "time",text : "时间"
+			}]
 		}
-	},{
-	  //配置项
-		gridId : "grid",
-		idField : "protFuncId",
-		textField : "name",
-		name : "函数",
-		addUrl : "saveData.do",
-		editUrl : "saveData.do",
-		delUrl : "deleteData.do"
-	});
+	},
+	paraDesc : {
+		type : "textarea",text : "参数说明",colspan : 2
+	},
+	funcDesc : {
+		type : "textarea",text : "函数说明",colspan : 2
+	},
+	notes : {
+		type : "textarea",text : "备注",colspan : 2
+	}
+},{
+  //配置项
+	gridId : "grid",
+	idField : "protFuncId",
+	textField : "name",
+	name : "函数",
+	addUrl : "saveData.do",
+	editUrl : "saveData.do",
+	delUrl : "deleteData.do"
+});
 ```
 更多内容以及使用方法请查看源码。
